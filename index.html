@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Cat house</title>
+  </head>
+  <body>
+    <main>
+      <h1>Michis App</h1>
+      <section id="randomMichis" class="container">
+        <div class="title">
+          <h2>Michis aleatorios</h2>
+          <button id="generateCat">Recargar</button>
+        </div>
+        <article class="cardMichi">
+          <div id="img1" class="imgMichi"></div>
+          <button id="saveMichi">Guardar como favorito</button>
+        </article>
+        <article class="cardMichi">
+          <div id="img2" class="imgMichi" alt="foto aleatoria de gato"></div>
+          <button id="saveMichi2">Guardar como favorito</button>
+        </article>
+        <article class="cardMichi">
+          <div id="img3" class="imgMichi" alt="foto aleatoria de gato"></div>
+          <button id="saveMichi3">Guardar como favorito</button>
+        </article>
+        <article class="cardMichi">
+          <div id="img4" class="imgMichi" alt="foto aleatoria de gato"></div>
+          <button id="saveMichi4">Guardar como favorito</button>
+        </article>
+        <article class="cardMichi">
+          <div id="img5" class="imgMichi" alt="foto aleatoria de gato"></div>
+          <button id="saveMichi5">Guardar como favorito</button>
+        </article>
+        <article class="cardMichi">
+          <div id="img6" class="imgMichi" alt="foto aleatoria de gato"></div>
+          <button id="saveMichi6">Guardar como favorito</button>
+        </article>
+      </section>
+      <section id="favorites" class="containerFavorites">
+        <h2>Michis Favoritos</h2>
+      </section>
+      <section id="uploadMichi" class="formContainer">
+        <h2>Muestranos a tu michi</h2>
+        <form id="uploadingForm">
+          <label for="selectFile" class="upload-button"></label>
+          <p>Cargar Archivo</p>
+          <input
+            type="file"
+            id="selectFile"
+            name="file"
+            style="display: none"
+            accept="image/*"
+          />
+          <img id="previsualizacion" />
+          <button type="button" onclick="uploadMichiPhoto()">Subir foto</button>
+          <p>Solo se aceptan imagenes de gatos.</p>
+        </form>
+      </section>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
